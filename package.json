@@ -14,5 +14,13 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "description": "Identify UK trees with this binary tree identification guide",
+  "main": "src/index.js",
+  "repository": {
+    "url": "https://github.com/aldreth/TreeFinder.git",
+    "type": "git"
+  },
+  "author": "Edward Andrews-Hodgson <edward@aldreth.com>",
+  "license": "MIT"
 }
