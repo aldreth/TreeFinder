@@ -22,5 +22,8 @@
     "type": "git"
   },
   "author": "Edward Andrews-Hodgson <edward@aldreth.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "eslintConfig": {
+    "extends": "react-app"
+  }
 }
