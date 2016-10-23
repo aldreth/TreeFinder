@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react';
+import './Answer.css'
 
 const Answer = ({answer, setQuestion}) => {
   const setQuestionClick = () => {
