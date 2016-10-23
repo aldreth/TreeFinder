@@ -42,11 +42,15 @@ const QuestionList = {
   q4: {
     answers: [
       {
-        answer: 'It is a cedar'
-      },
-      {
         answer: 'It is a sycamore'
       },
+    ]
+  },
+  q5: {
+    answers: [
+      {
+        answer: 'It is a cedar'
+      }
     ]
   }
 }
