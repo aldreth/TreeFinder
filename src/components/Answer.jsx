@@ -1,17 +1,22 @@
-import React, {Component, PropTypes} from 'react';
+import React, { PropTypes } from 'react';
 
-class Answer extends Component {
-
-  static propTypes = {
-    answer: PropTypes.string.isRequired,
-    nextKey: PropTypes.string
+const Answer = ({answer, setQuestion}) => {
+  const setQuestionClick = () => {
+    setQuestion(answer.nextKey);
   };
 
-  render() {
-    return (
-      <div className="answer" >
-        {this.props.answer}
-      </div>
-    )}
-  }
+  const linkClass = (typeof(answer.nextKey) === 'undefined') ? '' : 'link';
+
+  return (
+    <div className={`answer ${linkClass}`} onClick={setQuestionClick}>
+      {answer.answer}
+    </div>
+  )
+};
+
+Answer.propTypes = {
+  answer: PropTypes.object.isRequired,
+  setQuestion: PropTypes.func.isRequired
+};
+
 export default Answer;

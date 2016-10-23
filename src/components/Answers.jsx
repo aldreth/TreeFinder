@@ -1,10 +1,10 @@
 import React from 'react';
-import Answer from './Answer'
+import AnswerContainer from '../containers/AnswerContainer'
 
 const Answers = ({answers}) => (
   <div>
     {answers.map((answer, index) => {
-      return <Answer key={index} answer={answer.answer} nextKey={answer.nextKey} />
+      return <AnswerContainer key={index} answer={answer} />
     })}
   </div>
 );
