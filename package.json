@@ -18,6 +18,9 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
+  "engines" : {
+    "node" : "6.7.0"
+  },
   "description": "Identify UK trees with this binary tree identification guide",
   "main": "src/index.js",
   "repository": {
