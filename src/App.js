@@ -2,15 +2,9 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import Question from './components/Question';
+import QuestionContainer from './containers/QuestionContainer';
 
 class App extends Component {
-  componentWillMount() {
-    this.setState({
-      questionKey: 'q1',
-    });
-  }
-
   render() {
     return (
       <div className="App">
@@ -18,7 +12,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to React</h2>
         </div>
-        <Question questionKey={this.state.questionKey} />
+        <QuestionContainer />
       </div>
     );
   }
