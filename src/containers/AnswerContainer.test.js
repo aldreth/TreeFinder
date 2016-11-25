@@ -5,7 +5,7 @@ import configureStore from 'redux-mock-store';
 import AnswerContainer from './AnswerContainer';
 import Answer from '../components/Answer'
 
-import { setQuestion } from '../actions/question'
+import { setQuestions } from '../actions/questions'
 
 
 const mockStore = configureStore();
@@ -16,7 +16,7 @@ const answer = {
   answer: 'The answer with a key',
   nextKey: 'nextKey'
 }
-const store = mockStore({answer: answer, setQuestion: setQuestion} );
+const store = mockStore({answer: answer, setQuestions: setQuestions} );
 const answerContainer = mount(<Provider store={store}><AnswerContainer answer={answer} /></Provider>);
 
 

@@ -1,15 +1,15 @@
-import { QUESTION } from '../actions/question';
+import { QUESTION } from '../actions/questions';
 
 const initialState = {
-  question: 'q1'
+  questionKey: 'q1'
 }
 
-function question(state = initialState, action) {
+function questions(state = initialState, action) {
   switch (action.type) {
     case QUESTION:
       if (typeof(action.payload) === 'undefined') return state;
       return Object.assign({}, state, {
-          question: action.payload,
+          questionKey: action.payload,
       });
 
     default:
@@ -17,4 +17,4 @@ function question(state = initialState, action) {
   }
 }
 
-export default question;
+export default questions;

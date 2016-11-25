@@ -1,15 +1,15 @@
 import React, {PropTypes, Component} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import {setQuestion} from '../actions/question';
+import {setQuestions} from '../actions/questions';
 import Answer from '../components/Answer';
 
 class AnswerContainer extends Component {
   render() {
-    const {answer, setQuestion} = this.props;
+    const {answer, setQuestions} = this.props;
 
     return (
-      <Answer answer={answer} setQuestion={setQuestion} />
+      <Answer answer={answer} setQuestions={setQuestions} />
     );
   }
 }
@@ -21,7 +21,7 @@ AnswerContainer.propTypes = {
 
 function mapDispatchToProps(dispatch) {
   return {
-    setQuestion: bindActionCreators(setQuestion, dispatch)
+    setQuestions: bindActionCreators(setQuestions, dispatch)
   }
 }
 

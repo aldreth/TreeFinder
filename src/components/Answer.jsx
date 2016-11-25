@@ -1,9 +1,9 @@
 import React, { PropTypes } from 'react';
 import './Answer.css'
 
-const Answer = ({answer, setQuestion}) => {
+const Answer = ({answer, setQuestions}) => {
   const setQuestionClick = () => {
-    setQuestion(answer.nextKey);
+    setQuestions(answer.nextKey);
   };
 
   const linkClass = (typeof(answer.nextKey) === 'undefined') ? '' : 'link';
@@ -17,7 +17,7 @@ const Answer = ({answer, setQuestion}) => {
 
 Answer.propTypes = {
   answer: PropTypes.object.isRequired,
-  setQuestion: PropTypes.func.isRequired
+  setQuestions: PropTypes.func.isRequired
 };
 
 export default Answer;

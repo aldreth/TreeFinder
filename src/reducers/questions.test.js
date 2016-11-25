@@ -1,12 +1,12 @@
-import reducer from './question'
-import { QUESTION } from '../actions/question'
+import reducer from './questions'
+import { QUESTION } from '../actions/questions'
 
-describe('question reducer', () => {
+describe('questions reducer', () => {
   it('should return the initial state', () => {
     expect(
       reducer(undefined, {})
     ).toEqual({
-        question: 'q1'
+        questionKey: 'q1'
     })
   })
 
@@ -17,7 +17,7 @@ describe('question reducer', () => {
         payload: 'newKey'
       })
     ).toEqual({
-          question: 'newKey'
+          questionKey: 'newKey'
     })
   })
 })

@@ -1,4 +1,4 @@
-import { QUESTION, setQuestion } from './question';
+import { QUESTION, setQuestions } from './questions';
 
 it('should create an action to set the question key', () => {
     const newKey = 'newKey'
@@ -7,5 +7,5 @@ it('should create an action to set the question key', () => {
       payload: newKey
     }
 
-    expect(setQuestion(newKey)).toEqual(expectedAction)
+    expect(setQuestions(newKey)).toEqual(expectedAction)
   })

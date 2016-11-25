@@ -1,6 +1,6 @@
 export const QUESTION = 'QUESTION';
 
-export function setQuestion(value) {
+export function setQuestions(value) {
   return {
     type: QUESTION,
     payload: value,

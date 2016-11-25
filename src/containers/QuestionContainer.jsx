@@ -4,23 +4,23 @@ import Question from '../components/Question';
 
 class QuestionContainer extends Component {
   render() {
-    const {question} = this.props;
+    const {questions} = this.props;
 
     return (
       <div>
-        <Question questionKey={question.question} />
+        <Question questionKey={questions.questionKey} />
       </div>
     );
   }
 }
 
 QuestionContainer.propTypes = {
-  question: PropTypes.object.isRequired
+  questions: PropTypes.object.isRequired
 };
 
 function mapStateToProps(state, props) {
   return {
-    question: state.question
+    questions: state.questions
   };
 }
 

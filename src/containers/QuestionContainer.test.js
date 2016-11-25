@@ -6,7 +6,7 @@ import QuestionContainer from './QuestionContainer';
 import Question from '../components/Question'
 
 const mockStore = configureStore();
-const store = mockStore({ question: { question: 'q1' }});
+const store = mockStore({ questions: { questionKey: 'q1' }});
 const questionContainer = mount(<Provider store={store}><QuestionContainer /></Provider>);
 
 it('renders the Question component', () => {
