@@ -9,8 +9,9 @@ const Answer = ({answer, setQuestions}) => {
   const linkClass = (typeof(answer.nextKey) === 'undefined') ? '' : 'link';
 
   return (
-    <div className={`answer ${linkClass}`} onClick={setQuestionClick}>
-      {answer.answer}
+    <div className={`Answer ${linkClass}`} onClick={setQuestionClick}>
+      <p>{answer.answer}</p>
+      <p>{answer.description}</p>
     </div>
   )
 };

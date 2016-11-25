@@ -3,10 +3,12 @@ const QuestionList = {
     question: 'Is it an oak?',
     answers: [
       {
-        answer: 'Yes'
+        answer: 'Yes',
+        description: 'Then you have finished!'
       },
       {
         answer: 'No',
+        description: 'It must be something else. Click here to carry on.',
         nextKey: 'q2'
       },
     ]

@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import QuestionContainer from '../containers/QuestionContainer';
@@ -7,8 +6,8 @@ import QuestionContainer from '../containers/QuestionContainer';
 const App = () => (
   <div className="App">
     <div className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <h2>Welcome to React</h2>
+      <h2>Find your tree</h2>
+      <p>Answer the questions and discover what tree you're looking at.</p>
     </div>
     <QuestionContainer />
   </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import AnswerContainer from '../containers/AnswerContainer'
 
 const Answers = ({answers}) => (
-  <div>
+  <div className="Answers">
     {answers.map((answer, index) => {
       return <AnswerContainer key={index} answer={answer} />
     })}
